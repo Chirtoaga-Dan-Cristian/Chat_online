@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="header" >
+            <h1 >RoboChat</h1>
+            <a class="link" href="/login">Login</a>
+        </header>
+        <form class="register-form" id="register-form">
+            <div class="register-form_container">
+                <label for="login" class="register-form_label">Register</label>
+                <input type="text" id="login" name="login" class="register-form_input" placeholder="Login">
+
+                <label for="password" class="register-form_label">Password</label>
+                <input type="password" class="register-form_input" id="password" name="password" placeholder="Password">
+
+                <label for="passwordRepeat" class="register-form_label">Password Repeat</label>
+                <input type="password" class="register-form_input" id="passwordRepeat" name="passwordRepeat" placeholder="Password Repeat">
+
+                <button type="submit" class="register-form_button">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    
+</body>
+<script src="https://cdn.socket.io/4.5.3/socket.io.min.js"></script>
+<script src="auth.js"></script>
+</html>
